@@ -35,92 +35,6 @@ body {
     border-radius: 10px 10px 10px;
 }
 
-@media (max-width: 900px) {
-    #container {
-        flex-direction: column;
-        align-items: center;
-        width: 95%;
-    }
-
-    #cabecalho {
-        width: 100%;
-        padding: 5% 0;
-        text-align: center;
-    }
-
-    #principal {
-        width: 100%;
-        padding: 5%;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    .perfil {
-        width: 40%;
-        max-width: 150px;
-    }
-
-    #div_nome_profissao,
-    #div_localizacao,
-    #div_contato,
-    #div_lista_contato {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    /* contatos continuam centralizados */
-    #lista_contato {
-        width: 100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* cursos ficam alinhados à esquerda */
-    #conteudo ul {
-        width: 100%;
-        display: block;
-        padding-left: 20px; /* recuo padrão */
-        text-align: left;
-    }
-
-    li {
-        font-size: 2.2vh;
-    }
-
-    #nome {
-        font-size: 4vh;
-    }
-
-    #profissao {
-        font-size: 2.5vh;
-    }
-
-    #text_localizacao {
-        font-size: 2vh;
-        justify-content: center;
-    }
-
-    #contato {
-        font-size: 3vh;
-    }
-
-    #titulo {
-        font-size: 4vh;
-        text-align: center;
-    }
-
-    #conteudo {
-        font-size: 2vh;
-        text-align: justify;
-    }
-}
-
-
 #cabecalho {
     width: 80%;
     display: flex;
@@ -141,8 +55,8 @@ body {
 #div_img,
 #div_localizacao,
 #div_contato {
-    flex: 1; /* ocupa espaço proporcional */
-    min-width: 0; /* deixa o texto encolher */
+    flex: 1;
+    min-width: 0;
 }
 
 header {
@@ -271,4 +185,92 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #cabecalho {
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        border: solid 0px;
+        border-radius: 0px;
+    }
+
+    #principal {
+        width: 100%;
+        padding: 5%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .perfil {
+        width: 35%;
+        max-width: 130px;
+    }
+
+    #div_nome_profissao,
+    #div_localizacao,
+    #div_contato,
+    #div_lista_contato {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    #lista_contato {
+        width: 100%;
+        display: block;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    
+    #conteudo ul {
+        width: 100%;
+        display: block;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    li {
+        font-size: 2vh;
+        padding-left: 5px;
+    }
+
+    #nome {
+        font-size: 3.5vh;
+    }
+
+    #profissao {
+        font-size: 2vh;
+    }
+
+    #text_localizacao {
+        font-size: 1.8vh;
+        justify-content: center;
+    }
+
+    #contato {
+        font-size: 2.8vh;
+    }
+
+    #titulo {
+        font-size: 3.5vh;
+        padding: 1%;
+    }
+
+    #conteudo {
+        font-size: 1.8vh;
+        padding: 1%;
+        text-align: justify;
+    }
 }
